@@ -1,0 +1,10 @@
+
+<h3 style="margin-left: 90px">Введите параметры модели (0 - random forest, 1 - boosting). Если вы хотите использовать random forest, поле learning_rate заполните произвольно. В полях max_depth и feature_subsample_size при вводе "-1" будет использоваться неограниченная глубина и оптимальное число признаков для регрессии соответственно</h3>
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+      {{ wtf.quick_form(form) }}
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+
+<h2>Модель успешно обучилась!</h2>
+
+<p>
+<a href="{{ url_for('get_param') }}">Посмотреть параметры модели и значения функции потерь</a> <br />
+<a href="{{ url_for('predict') }}">Получить прогноз на тестовом датасете</a> <br />
+<a href="{{ url_for('my') }}">Вернуться на первоначальную страницу</a>
+</p>
+
+</body>
+</html>

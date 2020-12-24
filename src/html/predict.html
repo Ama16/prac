@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Predict</title>
+</head>
+<h2> Загрузите тестовый датасет</h2>
+<body>
+    <form method="POST"  enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        {{ form.file }}
+        <button type="submit">Upload</button>
+    </form>
+</body>
+
+
+<a href="{{ url_for('success_learn2') }}">Назад</a>
+
+</html>

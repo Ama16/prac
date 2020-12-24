@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+
+<a href="{{ url_for('success_learn2') }}">Назад</a>
+
+<h3>Название датасета: {{messages['name']}}</h3>
+<h3>Type: {{messages['type']}}</h3>
+<h3>learning rate: {{messages['lr']}}</h3>
+<h3>max depth: {{messages['md']}}</h3>
+<h3>n_estimators: {{messages['ne']}}</h3>
+<h3>feature_subsample_size: {{messages['fss']}}</h3>
+<h2>Значения функции потерь от итерации:</h2>
+{% for message in messages['loss'] %}
+    <div>{{ message.it }}&nbsp;&nbsp;&nbsp;<b>{{ message.loss }}</b></div>
+{% endfor %}
+
+
+</body>
+</html>
